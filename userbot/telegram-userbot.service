@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram Auto-Reply Userbot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/path/to/userbot
+ExecStart=/usr/bin/python3 /path/to/userbot/userbot.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

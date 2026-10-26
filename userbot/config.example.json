@@ -1,0 +1,1 @@
+{"ai_api_key":"PUT_AI_API_KEY_HERE","ai_model":"gemini-2.0-flash","ai_provider":"gemini","api_hash":"PUT_API_HASH_FROM_my.telegram.org","api_id":0,"daily_cap":60,"per_chat_min_interval":60,"reply_delay_max":90,"reply_delay_min":20}
