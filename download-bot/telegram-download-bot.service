@@ -1,16 +1,16 @@
 [Unit]
-Description=Telegram Link Download Bot
+Description=Telegram Relay Bot (for Bhavesh) — anonymous text relay, no downloads
 After=network-online.target
 Wants=network-online.target
 
 [Service]
 Type=simple
-WorkingDirectory=/path/to/download-bot
-ExecStart=/usr/bin/python3 /path/to/download-bot/bot.py
+WorkingDirectory=/home/hatch/workspace/telegram-bot
+ExecStart=/usr/bin/python3 /home/hatch/workspace/telegram-bot/bot.py
 Restart=always
 RestartSec=5
 Environment=PYTHONUNBUFFERED=1
-Environment=ALLOWED_IDS=YOUR_TELEGRAM_USER_ID
+Environment=ALLOWED_IDS=7861615131
 
 [Install]
 WantedBy=multi-user.target
